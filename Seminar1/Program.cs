@@ -32,7 +32,7 @@
     Console.Write("Yes!");
   else
     Console.Write("No!");
- */
+ 
 
  // Task 2. Напишите программу, которая на вход принимает одно число (N),
  //         а на выходе показывает все целые числа в промежутке от -N до N.
@@ -80,4 +80,27 @@ if (num1 > num2)
 else
   Console.Write("The second number " + num2 + 
   " is greater than the first number " +  num1);
+*/
+
+  // Task 2. Напишите программу, которая принимает на вход три числа 
+  //         и выдаёт максимальное из этих чисел.
+  //         2, 3, 7 -> 7
+  //         44 5 78 -> 78
+  //         22 3 9 -> 22
+
+  Console.Write("Input the first number: ");
+    int num1 = Convert.ToInt32(Console.ReadLine());
+  Console.Write("Input the second number: ");
+    int num2 = Convert.ToInt32(Console.ReadLine());
+  Console.Write("Input the third number: ");
+    int num3 = Convert.ToInt32(Console.ReadLine());
+    int max = num1;
+  if (num2 > max)
+  
+   max = num2;
+  
+  if (num3 > max)
+    max = num3;
+  Console.Write(" Max number: " + max);
+ 
   
