@@ -73,11 +73,11 @@ int num1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input a second number: ");
 int num2 = Convert.ToInt32(Console.ReadLine());
 
-if (num1 > num2) 
+    if (num1 > num2) 
 
   Console.Write("The first number " + num1 + 
   " is greater than the second number " + num2);
-else
+    else
   Console.Write("The second number " + num2 + 
   " is greater than the first number " +  num1);
 
@@ -95,14 +95,14 @@ else
   Console.Write("Input the third number: ");
     int num3 = Convert.ToInt32(Console.ReadLine());
     int max = num1;
-  if (num2 > max)
+      if (num2 > max)
   
    max = num2;
   
-  if (num3 > max)
+      if (num3 > max)
     max = num3;
   Console.Write(" Max number: " + max);
- */
+
 
  // Task 3. Напишите программу, которая на вход принимает число и выдаёт, 
  //         является ли число чётным (делится ли оно на два без остатка).
@@ -113,11 +113,33 @@ else
 
   Console.Write("Enter a number: ");
   int num = Convert.ToInt32(Console.ReadLine());
-if (num % 2 == 0)
+    if (num % 2 == 0)
 {
-  Console.Write("The number: " + num + " is even.");
+    Console.Write("The number: " + num + " is even.");
 }
-else
+    else
 {
   Console.Write(" Tne number: " + num + " is not even.");
 }
+*/ 
+// Task 4.Напишите программу, которая на вход принимает число (N), 
+//        а на выходе показывает все чётные числа от 1 до N.
+//        5 -> 2, 4
+//        8 -> 2, 4, 6, 8
+
+Console.Write("Enter a positive number: ");
+    int num = Convert.ToInt32(Console.ReadLine());
+    int current = 1;
+    
+      while(current <= num)
+    {
+       if(current % 2 == 0)
+     {
+          Console.Write(" " + current + ",");
+     }
+      current ++;
+     }
+    Console.Write("Even numbers from 1 to: " + num );
+
+    
+
