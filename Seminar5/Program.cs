@@ -1,190 +1,129 @@
-﻿// Seminar5 Lecture.
-// Вид 1:
-// void Method1()
-// {
-//   Console.WriteLine("Автор ...");
-// }
+﻿
+  // Homework 5:
+//   Task 1: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, 
+//           которая покажет количество чётных чисел в массиве.
+//           [345, 897, 568, 234] -> 2
 
-// Method1();
+  /*
+  Console.WriteLine("Enter the size of the array: ");
+    int size = Convert.ToInt32(Console.ReadLine());
+    int[] numbers = new int[size];
+    int count = 0;
 
-// Вид 2:
-// void Method2 (string msg)
-// {
-//   Console.WriteLine(msg);
-// }
-//   Method2("Текст сообщения");
-
-//  void Method21(string msg, int count)
-//  {
-//     int i = 0; 
-//     while (i < count)
-//     {
-//       Console.WriteLine(msg);
-//       i++;
-//     }
-//  }
-//   //Method21(msg: "Text", count: 4);
-//     Method21( count: 4 , msg: "new Text" );
-
-  // Вид 3: 
-    // int Method3()
-    // {
-    //   return DateTime.Now.Day;
-
-    // }
-    //   int year = Method3();
-    //   Console.WriteLine(year);
-
-    // Вид 4:
-
-      // string Method4( int count, string text )
-      // {
-      //    int i = 0;
-      //    string result = String.Empty;
-      //    while(i < count)
-      //    {
-      //     result = result + text;
-      //     i++;
-      //    }
-      //    return result;
-      // }
-
-      //  string Method4(int count, string text)
-      // {
-      //    string result = String.Empty;
-      //    {
-      //    for(int i = 0; i < count; i++)
-      //     result += text;
-      // }
-      //    return result;
-      // }
-
-      // string res = Method4(12, "Z");
-      // Console.WriteLine(res);
-
-
-// for (int i = 2; i <= 10; i++)
-// {
-//   for (int j = 2; j <= 10; j++)
-//   {
-//     Console.WriteLine($"{i} * {j} = {i * j}");
-//   }
-//   Console.WriteLine();
-// }
-
-// Работа с текстом:
-/*
-string text = " - Я думаю, - сказал князь, улыбаясь, - что, "
-              + "ежели бы вас послали вместо нашего милого Винценгероде, "
-              + "вы бы взяли приступом согласие прусского короля."
-              + "Вы так красноречивы. Вы дадите мне чаю?";
-  string Replace(string text, char oldValue, char newValue)
-  {
-      string result = string.Empty;
-      int length = text.Length;
-      for(int i = 0; i < length; i++ )
+    ArrayRandomNumbers(numbers);
+    PrintArray(numbers);
+      for (int i = 0; i < numbers.Length; i++)
       {
-        if(text[i] == oldValue) result = result + $"{newValue}";
-        else result = result + $"{text[i]}";
+          if (numbers[i] % 2 == 0)
+          count++;
       }
-    return result;
+    Console.WriteLine($"The number of even numbers in the array: {count} ");
 
-  }
-    string newText = Replace(text, ' ', '|');
-    Console.WriteLine(newText);
-    Console.WriteLine();
-
-   newText = Replace(text, 'к', 'К');
-    Console.WriteLine(newText);
-    Console.ReadLine();
-
-     newText = Replace(text, 'с', 'С');
-     Console.WriteLine(newText);
-     Console.ReadLine();
-     */
-
-     // Упорядочить массив.
-
-//      int[] arr = { 1, 5, 4, 3, 2, 6, 7, 1, 1 };
-
-//      void PrintArray(int[] array)
-//      {
-//       int count = array.Length;
-
-//       for (int i = 0; i < array.Length; i++)
-//       {  Console.Write($"{array[i]} ");
-//       }
-//       Console.WriteLine();
-//      }
-//      void SelectionSort(int[] array);
-// {
-//          //int minPosition = i;
-       
-//         for (int j = i + 1; j < array.Length - 1; j++)
-//         {
-//           if(array [j] < array[minPosition]) minPosition = j;
-
-//         }
-//           int temporary = array[i];
-//           array[i] = array[minPosition];
-//           array[minPosition] = temporary;
-//         }
-
-//       }
-//         PrintArray(arr);
-//         SelectionSort(arr);
-
-//         PrintArray(arr);
-
-
- //    Seminar 5:
-/*
-int[] CreateRandomArray (int size, int minValue, int maxValue)
-{
-    int[] array = new int[ size];
-    for (int i = 0; i < size; i++)
-    array[i] = new Random () . Next (minValue, maxValue + 1) ;
-      return array;
-}
-
-  void ShowArray (int [] array)
-{
-    for (int i = 0; i < array.Length; i++)
-    Console.Write(array[i] + " ");
-
-    Console.WriteLine();
-}
-
-  int GetNegativeSum(int[] array)
-{
-    int sum = 0;
-    for (int i = 0; i < array.Length; i++)
-
-    if (array[i] < 0)
-       sum += array[i];
-
-    return sum;
-}
-
-Console.Write("Input a quantity of elements: ");
-int size = Convert. ToInt32(Console. ReadLine ( ));
-Console.Write("Input a min possible value: ");
-int min = Convert. ToInt32(Console. ReadLine ( ));
-Console.Write("Input a max possible value: ");
-int max = Convert. ToInt32(Console. ReadLine ()) ;
-
-int[] newArray = CreateRandomArray (size, min, max);
-ShowArray (newArray);
-
-int result = GetNegativeSum (newArray);
-Console.WriteLine("Sum of negatives is " + result);
+    void ArrayRandomNumbers(int[] array)
+    {
+        for(int i = 0; i < array.Length; i++)
+        {
+            array[i] = new Random().Next(99,999);
+        }
+    }
+    void PrintArray(int[] array)
+    {
+        for(int i = 0; i < array.Length; i++)
+        {
+            Console.Write(array[i] + " ");
+        }
+        Console.WriteLine();
+    }
 */
-    // Task 1:
-// . Напишите программу замены элементов массива: положительные на отрицательные и наоборот.
 
-// Task 2:
-// Задайте массив. Напишите программу, которая определяет, присутствует ли данное число в массиве.
+// Task 2: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, 
+//         стоящих на нечётных позициях.
+//         [3, 7, 23, 12] -> 19
+//         [-4, -6, 89, 6] -> 0
 
-// Task 3:
-    // Задайте одномерный массив из m случайных чисел. Найдите количество элементов массива, значения
-    // которых лежат в отрезке [a,b].
+/*
+    int size = ReadInt("Enter the size of the array: ");
+    int min = ReadInt("Enter the minimum of the array: ");
+    int max = ReadInt("Enter the maximum of the array: ");
+     int [] numbers = new int[size];
+
+     ArrayRandomNumbers(numbers);
+     PrintArray(numbers);
+    int result = 0;
+
+    for (int i = 0; i < numbers.Length; i++)
+    {
+        if (i % 2 != 0)
+        
+            result += numbers[i];
+    }
+      Console.WriteLine($"The sum of the elements standing in odd positions - {result}");
+
+void ArrayRandomNumbers(int [] array) 
+    {
+        for (int i = 0; i < array.Length; i++)
+        {
+            array[i] = new Random().Next(min, max);
+        }
+    }
+
+void PrintArray(int[] array) 
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write(array[i] + " ");
+    }
+    Console.WriteLine();
+}
+
+    int ReadInt(string message)  
+    {
+        Console.Write(message);
+        return Convert.ToInt32(Console.ReadLine());
+
+    }
+
+*/
+
+// Task 3: Задайте массив вещественных чисел. Найдите разницу между максимальным и 
+//         минимальным элементом массива.
+//         [3 7 22 2 78] -> 76
+
+    int size = 9;
+    int[] numbers = new int[size];
+    ArrayRandomNumbers(numbers);
+    PrintArray(numbers);
+
+      int max = numbers[0];
+      int min = numbers[0];
+
+for (int i = 0; i < numbers.Length; i++)
+{
+    if (numbers[i] > max)
+    {
+        max = numbers[i];
+    }
+    else if (numbers[i] < min)
+    {
+        min = numbers[i];
+    }
+}
+    Console.WriteLine($"Minimum number: {min}");
+    Console.WriteLine($"Maximum number: {max}");
+    Console.WriteLine($"The difference between the maximum and minimum numbers: {max-min}");
+
+      void ArrayRandomNumbers(int[] array)
+      {
+          for (int i = 0; i < array.Length; i++)
+          {
+              array[i] = new Random().Next(1, 555);
+          }
+      }
+      void PrintArray(int[] array)
+      {
+          for (int i = 0; i < array.Length; i++)
+          {
+              Console.Write(array[i] + " ");
+          }
+          Console.WriteLine();
+      }
