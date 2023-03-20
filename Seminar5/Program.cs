@@ -88,7 +88,7 @@ void PrintArray(int[] array)
 // Task 3: Задайте массив вещественных чисел. Найдите разницу между максимальным и 
 //         минимальным элементом массива.
 //         [3 7 22 2 78] -> 76
-
+/*
     int size = 9;
     int[] numbers = new int[size];
     ArrayRandomNumbers(numbers);
@@ -127,3 +127,4 @@ for (int i = 0; i < numbers.Length; i++)
           }
           Console.WriteLine();
       }
+      */
