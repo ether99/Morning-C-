@@ -15,12 +15,12 @@ array[row2, j] = temp;
    }
 }
 
-int[,] newArray = CreateRandom2dArray ();
-Show2dArray (newArray);
-Console.Write("Input a first row for changing: ");
-int r1 = Convert. ToInt32(Console. ReadLine ());
-Console.Write("Input a second row for changing: ");
-int r2 = Convert. ToInt32(Console. ReadLine ());
+// int[,] newArray = CreateRandom2dArray ();
+// Show2dArray (newArray);
+// Console.Write("Input a first row for changing: ");
+// int r1 = Convert. ToInt32(Console. ReadLine ());
+// Console.Write("Input a second row for changing: ");
+// int r2 = Convert. ToInt32(Console. ReadLine ());
 
-ChangeRows (newArray, r1, r2);
-Show2dArray (newArray);
+// ChangeRows (newArray, r1, r2);
+// Show2dArray (newArray);
